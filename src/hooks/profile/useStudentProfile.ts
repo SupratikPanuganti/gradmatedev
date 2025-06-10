@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabaseClient';
-import type { Student } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase/client';
+import type { Student } from '@/lib/supabase/client';
 
 export const useStudentProfile = () => {
   const [profile, setProfile] = useState<Student | null>(null);
