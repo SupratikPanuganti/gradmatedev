@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabaseClient';
-import type { OutreachLog, Lab, Professor } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase/client';
+import type { OutreachLog, Lab, Professor } from '@/lib/supabase/client';
 
 export const useLabOutreach = () => {
   const [outreachLogs, setOutreachLogs] = useState<OutreachLog[]>([]);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabaseClient';
-import type { EssayIdea } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase/client';
+import type { EssayIdea } from '@/lib/supabase/client';
 
 export const useEssayIdeas = () => {
   const [ideas, setIdeas] = useState<EssayIdea[]>([]);
